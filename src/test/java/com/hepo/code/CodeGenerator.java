@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import com.baomidou.mybatisplus.generator.config.GlobalConfig;
 import com.baomidou.mybatisplus.generator.config.PackageConfig;
 import com.baomidou.mybatisplus.generator.config.StrategyConfig;
+import com.baomidou.mybatisplus.generator.config.po.LikeTable;
 import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
@@ -41,6 +42,7 @@ public class CodeGenerator {
         //是否允许lombok
         sc.setEntityLombokModel(true);
         sc.setRestControllerStyle(true);
+        sc.setEntityTableFieldAnnotationEnable(true);
         //驼峰风格
         sc.setNaming(NamingStrategy.underline_to_camel);
         mpg.setStrategy(sc);
